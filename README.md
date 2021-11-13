@@ -341,7 +341,19 @@ Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy di
 Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00).
 
 **Penyelesaian**
+- Pada etc/squid/acl.conf, kita masukkan yang di bawah. Artinya adalah pada hari senin, selasa, rabu, dan kamis, hanya bisa jam 7 sampai 11, dan selanjutnya. Setiap huruf artinya satu hari tertentu pada sebuah minggu.
 
+- Ubah /etc/squid/squid.conf untuk include acl.conf dan meng-allow sesuai dengan acl.conf.
+
+![Screenshot 2021-11-13 210436](https://user-images.githubusercontent.com/62832487/141646762-884ce060-99b9-48fa-bfa5-2409b47fa6a0.png)
+
+- Jika dibuka saat waktu yang ditentukan di acl.conf, maka akan keluar website yang diinginkan:
+
+![image](https://user-images.githubusercontent.com/68369091/141647486-1520b980-a953-4101-87a0-bd19ced168dd.png)
+
+- Jika dibuka saat waktu yang di luar di acl.conf, maka akan ditidak-perbolehkan untuk membuka website:
+
+![image](https://user-images.githubusercontent.com/68369091/141647505-7ef37a6b-794f-4398-9ff0-bf998778c218.png)
 
 ### Kendala yang Dialami
 - Tidak bisa me lynx super.franky
