@@ -345,7 +345,7 @@ Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet 
 
 - Ubah /etc/squid/squid.conf untuk include acl.conf dan meng-allow sesuai dengan acl.conf.
 
-![Screenshot 2021-11-13 210436](https://user-images.githubusercontent.com/62832487/141646762-884ce060-99b9-48fa-bfa5-2409b47fa6a0.png)
+![Screenshot 2021-11-13 210344](https://user-images.githubusercontent.com/62832487/141646726-f4c7957f-4f38-4136-8ddc-506d1c1b7a88.png)
 
 - Jika dibuka saat waktu yang ditentukan di acl.conf, maka akan keluar website yang diinginkan:
 
