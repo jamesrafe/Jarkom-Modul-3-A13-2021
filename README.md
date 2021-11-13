@@ -343,6 +343,8 @@ Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet 
 **Penyelesaian**
 - Pada etc/squid/acl.conf, kita masukkan yang di bawah. Artinya adalah pada hari senin, selasa, rabu, dan kamis, hanya bisa jam 7 sampai 11, dan selanjutnya. Setiap huruf artinya satu hari tertentu pada sebuah minggu.
 
+![Screenshot 2021-11-13 214311](https://user-images.githubusercontent.com/62832487/141648000-14eade4b-80a9-44ad-b65d-23a4726752b5.png)
+
 - Ubah /etc/squid/squid.conf untuk include acl.conf dan meng-allow sesuai dengan acl.conf.
 
 ![Screenshot 2021-11-13 210344](https://user-images.githubusercontent.com/62832487/141646726-f4c7957f-4f38-4136-8ddc-506d1c1b7a88.png)
