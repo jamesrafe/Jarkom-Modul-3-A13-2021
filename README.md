@@ -315,7 +315,7 @@ Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy di
 
 **Penyelesaian**
 **Pada Water7**
-- Jalankan perintah berikut untuk membuat akun autentikasi baru dengan username `luffybelikapalB09`. Kita akan diminta untuk memasukkan password baru dan confirm password tersebut diisi `luffy_A13`.
+- Jalankan perintah berikut untuk membuat akun autentikasi baru dengan username `luffybelikapalA13`. Kita akan diminta untuk memasukkan password baru dan confirm password tersebut diisi `luffy_A13`.
   ```
   htpasswd -cm /etc/squid/passwd luffybelikapalA13
   ```
