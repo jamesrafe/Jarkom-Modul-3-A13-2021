@@ -238,9 +238,8 @@ Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 
 **Pada Jipangu**
 - Edit file `/etc/dhcp/dhcpd.conf` pada bagian `default-lease-time` dan `max-lease-time` seperti pada gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 205415](https://user-images.githubusercontent.com/62832487/141646415-28294bf4-05b7-4f67-87c7-d47c4e1db1ac.png)
   
-  [Screenshot]
 - Restart isc-dhcp-server.
   ```
   service isc-dhcp-server restart
@@ -253,7 +252,8 @@ Luffy dan Zoro berencana menjadikan Skypie sebagai server untuk jual beli kapal 
 **Pada Jipangu**
 - Edit file `/etc/dhcp/dhcpd.conf` seperti pada gambar berikut:
   
-  [Screenshot]
+![Screenshot 2021-11-13 205559](https://user-images.githubusercontent.com/62832487/141646481-053ef469-755e-486e-822c-d6a8e6f54034.png)
+
 - Restart isc-dhcp-server.
   ```
   service isc-dhcp-server restart
@@ -262,11 +262,12 @@ Luffy dan Zoro berencana menjadikan Skypie sebagai server untuk jual beli kapal 
 **Pada Skypie**
 - Edit file `/etc/network/interfaces` seperti pada gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 205657](https://user-images.githubusercontent.com/62832487/141646519-f334050f-b206-476d-884c-2f7b1281f3c0.png)
+
 - Restart Skypie dengan klik stop dan start pada node Skypie.
 - Lakukan testing pada IP dan nameserver.
 
-  [Screenshot]
+![Screenshot 2021-11-13 205740](https://user-images.githubusercontent.com/62832487/141646539-20923c06-fcc0-498b-895e-7b564a4e075b.png)
 
 ### Soal No. 8
 Pada Loguetown, proxy harus bisa diakses dengan nama `jualbelikapal.yyy.com` dengan port yang digunakan adalah 5000.
@@ -288,7 +289,8 @@ Pada Loguetown, proxy harus bisa diakses dengan nama `jualbelikapal.yyy.com` den
   ```
 - Edit file `/etc/squid/squid.conf` seperti gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 205911](https://user-images.githubusercontent.com/62832487/141646588-a9cb2a71-ab53-41d4-9e67-6f181c8a57be.png)
+
 - Tambahkan IP EniesLobby (192.175.2.2) pada file `/etc/resolv.conf`.
 - Restart squid.
   ```
@@ -306,7 +308,7 @@ Pada Loguetown, proxy harus bisa diakses dengan nama `jualbelikapal.yyy.com` den
   ```
 - Buka `http://its.ac.id` menggunakan lynx.
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 210230](https://user-images.githubusercontent.com/62832487/141646694-69ea26c1-e7d0-4e15-979d-b69c541f67d5.png)
 
 ### Soal No. 9
 Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy dipasang autentikasi user proxy dengan enkripsi MD5 dengan dua username, yaitu `luffybelikapalyyy` dengan password `luffy_yyy` dan `zorobelikapalyyy` dengan password `zoro_yyy`.
@@ -323,7 +325,8 @@ Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy di
   ```
 - Edit file `/etc/squid/squid.conf` seperti pada gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 210344](https://user-images.githubusercontent.com/62832487/141646726-f4c7957f-4f38-4136-8ddc-506d1c1b7a88.png)
+
 - Restart squid.
   ```
   service squid restart
@@ -332,7 +335,7 @@ Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy di
 **Pada Loguetown**
 - Buka `http://its.ac.id` menggunakan lynx.
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 210436](https://user-images.githubusercontent.com/62832487/141646762-884ce060-99b9-48fa-bfa5-2409b47fa6a0.png)
 
 ### Soal No. 10
 Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00).
