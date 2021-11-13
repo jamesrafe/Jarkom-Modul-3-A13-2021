@@ -357,3 +357,4 @@ Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet 
 
 ### Kendala yang Dialami
 - Tidak bisa me lynx super.franky
+- Tidak pernah diajari relay
