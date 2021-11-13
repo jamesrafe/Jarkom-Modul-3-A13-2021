@@ -137,11 +137,12 @@ Client yang melalui Switch1 mendapatkan range IP dari [prefix IP].1.20 - [prefix
   
 - Edit file `/etc/default/isc-dhcp-server` seperti gambar berikut:
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 203550](https://user-images.githubusercontent.com/62832487/141645874-5ade5746-787e-457c-8f2e-8b62920fff08.png)
   
 - Edit file `/etc/dhcp/dhcpd.conf` seperti gambar berikut:
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 203841](https://user-images.githubusercontent.com/62832487/141645954-3e35bb88-fd8c-4898-b2fb-92403966a995.png)
+  
 - Restart isc-dhcp-server.
   ```
   service isc-dhcp-server restart
@@ -150,21 +151,22 @@ Client yang melalui Switch1 mendapatkan range IP dari [prefix IP].1.20 - [prefix
 **Pada Loguetown**
 - Edit file `/etc/network/interfaces` seperti gambar berikut:
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 204054](https://user-images.githubusercontent.com/62832487/141646017-414a63b2-df7b-46fa-98ce-e6796b5bed4e.png)
+  
 - Restart Loguetown dengan klik stop dan start pada node Loguetown.
 - Lakukan testing pada IP dan nameserver.
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 204134](https://user-images.githubusercontent.com/62832487/141646046-c07db7da-da45-487e-a9f4-65246d06fc1c.png)
 
 **Pada Alabasta**
 - Edit file `/etc/network/interfaces` seperti gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 204251](https://user-images.githubusercontent.com/62832487/141646092-da55da53-3e66-4171-8f29-719b89e7650b.png)
+  
 - Restart Alabasta dengan klik stop dan start pada node Alabasta.
 - Lakukan testing pada IP dan nameserver.
 
-  [Screenshot]
-
+![Screenshot 2021-11-13 204327](https://user-images.githubusercontent.com/62832487/141646110-63b62199-3bf8-4e0b-8828-cb1c84fcf98c.png)
 
 ### Soal No. 4
 Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.30 - [prefix IP].3.50.
@@ -173,7 +175,8 @@ Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.30 - [prefix
 **Pada Jipangu**
 - Edit file `/etc/dhcp/dhcpd.conf` seperti gambar berikut:
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 204503](https://user-images.githubusercontent.com/62832487/141646152-784e6f22-f16d-4a04-92eb-aa0ea39e685b.png)
+
 - Restart isc-dhcp-server.
   ```
   service isc-dhcp-server restart
@@ -182,11 +185,12 @@ Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.30 - [prefix
 **Pada TottoLand**
 - Edit file `/etc/network/interfaces` seperti gambar berikut:
 
-  [Screenshot]
+![Screenshot 2021-11-13 204601](https://user-images.githubusercontent.com/62832487/141646182-df73e2f1-e8a7-47d4-b646-ff6b74ed2e45.png)
+  
 - Restart TottoLand dengan klik stop dan start pada node TottoLand.
 - Lakukan testing pada IP dan nameserver.
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 204711](https://user-images.githubusercontent.com/62832487/141646219-b3f1ea54-2149-487a-b16e-b30a419d702d.png)
 
 ### Soal No. 5
 Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan internet melalui DNS tersebut.
@@ -199,7 +203,8 @@ Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan interne
   ```
 - Edit file `/etc/bind/named.conf.options` seperti pada gambar berikut:
 
-  [Screenshot]
+  ![Screenshot 2021-11-13 204920](https://user-images.githubusercontent.com/62832487/141646288-7fd305b2-32f3-4764-ad00-ce4b7642ce35.png)
+
 - Restart bind9.
   ```
   service bind9 restart
@@ -208,22 +213,22 @@ Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan interne
 **Pada Loguetown**
 - Mencoba ping `google.com`.
 
-  [Screenshot]
+  ![4](https://user-images.githubusercontent.com/62832487/141646316-4cfeb685-1b68-49cc-98ec-14f428735526.png)
 
 **Pada Alabasta**
 - Mencoba ping `google.com`.
 
-  [Screenshot]
+![Screenshot 2021-11-13 205047](https://user-images.githubusercontent.com/62832487/141646334-f9eb8801-49fa-4b57-9b83-00aa066462ec.png)
 
 **Pada Skypie**
 - Mencoba ping `google.com`.
 
-  [Screenshot]
+![Screenshot 2021-11-13 205157](https://user-images.githubusercontent.com/62832487/141646363-aa0b3b47-af52-4999-8f48-35258c7918d0.png)  
 
 **Pada TottoLand**
 - Mencoba ping `google.com`.
 
-  [Screenshot]
+![Screenshot 2021-11-13 205244](https://user-images.githubusercontent.com/62832487/141646379-5be0203f-84c7-4c4e-919b-6936fb49522a.png)
 
 
 ### Soal No. 6
